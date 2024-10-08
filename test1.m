@@ -13,7 +13,7 @@ for i = 1:n_test
     D = sigma + randn(n,1)*var;
     T = T + diag(D);
     F = evaluateAtomicBlock(T,fun,max_its);
-    F1 = funm(T,fun);
+    F1 = funm(T,@exp);
     errAss(i) = norm(F-F1,inf);
     errRel(i) = errAss(i)/norm(F1,inf);
     if errRel(i) > 1e-10
