@@ -1,6 +1,6 @@
 function u = confluent(q)
 %
-% u = confl(q)
+% u = confluent(q)
 %
 % Sia q un vettore di interi positivi, restituisce una permutazione
 % confluente di q
