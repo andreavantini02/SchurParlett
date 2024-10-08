@@ -37,6 +37,6 @@ else
     F = cell2mat(F);
 end
 F = Q*F*Q';
-if max(max(abs(imag(F)))) < 1e-12
+if norm(imag(F),inf) < 1e-8
     F = real(F);
 end
