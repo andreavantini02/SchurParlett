@@ -13,3 +13,4 @@ for i = 1:n_test
         n_err = n_err + 1;
     end
 end
+semilogy(errRel,'*k')
